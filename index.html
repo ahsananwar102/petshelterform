@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A survey on animals.">
+    <title>Pet Shelter House</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1 id="title">Pet Shelter House</h1>
+      <p id="description">Thank you for taking part in the survey</p>
+    </header>
+
+    <form action="#" id="survey-form">
+      <div class="form-elements">
+        <label id='name-label' for="name"><b>Name</b></label>
+        <input type='text'name='name' placeholder="Enter your name..." id="name" required class="form-elements-control" title="Required">
+      </div>
+      <div class="form-elements">
+        <label for="email" id="email-label"><b>Email</b></label>
+        <input title="Required" type="email" name="email" id="email" placeholder="Enter your Email..." required class="form-elements-control">
+      </div>
+      <div class="form-elements">
+        <label for="age" id="number-label"><b>Age (optional)</b></label>
+        <input type="number" name="age" id="age" min="8" max="110" placeholder="Enter your age..." class="form-elements-control">
+      </div>
+      <div class="form-elements">
+        <p><b>Which animal species do you prefer the most as pets?</b></p>
+        <select title="Select food type" name="food-type" id="dropdown" class="form-elements-control">
+          <option disabled selected>Select one that applies</option>
+          <option value="cats">Cats</option>
+          <option value="dogs">Dogs</option>
+          <option value="rabbits">Rabbits</option>
+          <option value="birds">Birds</option>
+          <option value="hamsters">Hamsters</option>
+          <option value="fish">Fish</option>
+          <option value="cattle">Cattle</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-elements">
+        <p><b>Are you considering to buy a pet in the near future?</b></p>
+        <label class="radio"><input type="radio" value='definitly' name="service-satisfaction" checked>Definitly</label>
+        <label class="radio"><input type="radio" value='probably' name="service-satisfaction">Probably</label>
+        <label class="radio"><input type="radio" value='probably-not' name="service-satisfaction">Probably not</label>
+        <label class="radio"><input type="radio" value='not-at-all' name="service-satisfaction">Not at all</label>
+      </div>
+      <div class="form-elements">
+        <p><b>What pets do you currently own? (select all that apply)</b></p>
+        <label class="checkbox"><input type="checkbox" id="cat" name="owned-pets">Cat</label>
+        <label class="checkbox"><input type="checkbox" name="owned-pets" id="dog">Dog</label>
+        <label class="checkbox"><input type="checkbox" id="birds" name="owned-pets">Birds</label>
+        <label class="checkbox"><input type="checkbox" id="hamster" name="owned-pets">Hamster</label>
+        <label class="checkbox"><input type="checkbox" id="rabbit" name="owned-pets">Rabbit</label>
+        <label class="checkbox"><input type="checkbox" id="fish" name="owned-pets">Fish</label>
+        <label class="checkbox"><input type="checkbox" id="birds" name="owned-pets">Cattle</label>
+        <label class="checkbox"><input type="checkbox" id="other" name="owned-pets">Other</label>
+        <label class="checkbox"><input type="checkbox" id="no-pets" name="owned-pets">I do not own any pets</label>
+      </div>
+      <div class="form-elements">
+        <p><b>Would you like to tell us something about youself?</b></p>
+        <textarea name="bio" class="form-elements-control" rows="4" placeholder="Looking after animals is my passion..."></textarea>
+      </div>
+      <input type="submit" id="submit" value="Submit" class="submit">
+    </form>
+
+  </body>
+</html>

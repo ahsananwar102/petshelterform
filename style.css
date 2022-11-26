@@ -1,0 +1,164 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url(https://images.ctfassets.net/hrltx12pl8hq/7JnR6tVVwDyUM8Cbci3GtJ/bf74366cff2ba271471725d0b0ef418c/shutterstock_376532611-og.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+  padding: 1em 0 1.5em 0;
+  background: rgba(2,0,36,0.8);
+  background: linear-gradient(45deg, rgba(25, 22, 78, 0.8) 0%, rgba(28, 28, 114, 0.9) 35%, rgba(0, 136, 163, 0.9) 100%);
+  color: rgba(255, 255, 255, 1);
+  background-size: 400%;
+  animation: header-bg-animation 20s infinite alternate;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes header-bg-animation{
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+header h1, header p{
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+header p{
+  font-style: italic;
+  font-size: larger;
+}
+
+form{
+  width: 60vw;
+  margin: 15px auto;
+  background: linear-gradient(-45deg, rgba(25, 22, 78, 0.85) 0%, rgba(28, 28, 114, 0.85) 35%, rgba(0, 136, 163, 0.8) 100%);
+  color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  height: max-content;
+  /* padding-right: 25px; */
+  font-size: large;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 1000px){
+  form{
+    width: 65%;
+  }
+  header{
+    width: 80%;
+  }
+}
+
+@media (max-width: 750px){
+  form{
+    width: 80%;
+  }
+  header{
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px){
+  form{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.form-elements-control{
+  display: block;
+  width: 100%;
+  min-height: 2.35em;
+  border: 1.4px solid rgb(177, 177, 177);
+  border-radius: 5px;
+}
+
+input, select, textarea{
+  margin: 6px 0 0 0;
+  background: rgba(25, 22, 78, 0.38) 0%;
+  color: #ffffff;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #ffffff;
+  opacity: 85%;
+  padding-left: 2px;
+}
+
+select{
+  padding: 4px 0px;
+  opacity: 85%;
+}
+
+option{
+  background: rgba(28, 28, 114, 0.85) 35%;
+}
+
+label{
+  display: block;
+  margin: 1.2rem 0 0 0;
+}
+
+input[type='radio'], input[type="checkbox"]{
+  vertical-align: middle;
+  margin: 0 1.2em 0.3em 0;
+  width: unset;
+  display: inline-block;
+}
+
+.form-elements p{
+  margin: 1.5em 0 0 0;
+}
+
+.radio, .checkbox{
+  margin: 0.44rem 0 0 0;
+}
+
+.submit{
+  display: block;
+  min-height: 2.35em;
+  width: 75%;
+  margin: 2em auto 0.8em auto;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+}
+
+.submit:hover{
+  cursor: pointer;
+  color: rgba(28, 28, 114, 1);
+  background-color: #e6e6e6;
+  font-weight: 750;
+  letter-spacing: 0.09px;
+  animation: submit-animation 0.3s linear forwards;
+}
+
+@keyframes submit-animation{
+  0%{
+    box-shadow: 0 0 0 0 darkgray;
+  }
+  100%{
+    box-shadow: 0 0 0 3px darkgray;
+  }
+}
+
+
